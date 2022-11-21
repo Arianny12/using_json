@@ -2,7 +2,6 @@ let outputImage = document.getElementById('image');
 let outputTitle = document.getElementById('title');
 let everythingContainer = document.getElementsByClassName('everything')[0];
 
-/* PROF NOTE: Get a reference to our header container */
 let headerContainer = document.getElementsByClassName('header')[0];
 
 var numRed = Math.random() * 255;
@@ -10,7 +9,6 @@ var numGreen = Math.random() * 255;
 var numBlue = Math.random() * 255;
 var randomColor = "rgb(" + numRed + "," + numGreen + "," + numBlue + ")";
 
-/* PROF NOTE: Apply the random color to the header BG */
 headerContainer.style.backgroundColor = randomColor;
 
 let artCollection =[
@@ -80,8 +78,7 @@ let artCollection =[
 
     let newContentElementImg = document.createElement("DIV");
     newContentElementImg.classList.add('contentImageContainer');
-    /* PROF NOTE: If we want the image div to have a random BG,
-                  we need to generate and apply it here */
+
     let randR = Math.random() * 255;
     let randG = Math.random() * 255;
     let randB = Math.random() * 255;
@@ -92,7 +89,7 @@ let artCollection =[
     let newImage = document.createElement("IMG");
     newImage.src = incomingJSON['image'];
 
-    newContentElement.appendChild(newContentElementText); /* If we want this to be the first element inside of newContentElement, we 'appendChild' it first */
+    newContentElement.appendChild(newContentElementText);
     newContentElement.appendChild(newContentElementImg);
     newContentElementImg.appendChild(newImage);
     everythingContainer.appendChild(newContentElement);
