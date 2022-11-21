@@ -1,0 +1,45 @@
+*{box-sizing: border-box;}
+
+body{
+  padding:0px;
+  margin:0px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* object-position: center center; */
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
+.header{
+  width: 100%;
+  height:100vh;
+  font-size: 55px;
+  background-color: #30D5C8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentItem {
+  color: #fff;
+}
+
+/* PROF NOTE: Targeting the img tag we create */
+.contentItem img {
+/* .image{ */
+  width: 560px;
+  height: 250px;
+  object-fit: contain;
+  object-position: center center;
+}
+
+/* .blockLeft, .blockRight {
+  width: 600px;
+  height: 300px;
+  background-color: pink;
+} */
